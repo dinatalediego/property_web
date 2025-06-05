@@ -1,0 +1,10 @@
+frontend/
+├── src/
+│   ├── pages/
+│   │   ├── Solutions/
+│   │   │   ├── Solutions.jsx               ✅ Componente visual principal
+│   │   │   ├── config.js                   ✅ Textos, prompts o settings
+│   │   │   ├── logic/
+│   │   │   │   └── SolutionsAgent.js       ✅ Clase modular con lógica
+│   │   │   └── components/
+│   │   │       └── SolutionCard.jsx        ✅ Tarjeta reutilizable

@@ -1,5 +1,5 @@
-import Hero from '../components/Hero';
-import Card from '../components/Card';
+import Hero from '../../components/Hero';
+import Card from '../../components/Card';
 import { useNavigate } from 'react-router-dom';
 import { Database, Brain, BarChart2 } from 'lucide-react';
 

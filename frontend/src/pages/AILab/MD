@@ -1,0 +1,10 @@
+src/
+├── pages/
+│   ├── AILab/
+│   │   ├── AILab.jsx            # Entrada visual
+│   │   ├── components/
+│   │   │   ├── SimulationCard.jsx
+│   │   │   └── LoadingBrain.jsx
+│   │   ├── config.js            # Textos, íconos, IA prompts
+│   │   └── logic/
+│   │       └── AILabAgent.js    # Clase OOP con métodos
