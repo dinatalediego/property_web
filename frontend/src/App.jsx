@@ -1,16 +1,18 @@
-import Hero from './components/Hero'
-import Card from './components/Card'
-import { Database, Brain, BarChart2 } from 'lucide-react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import DatasetExplorer from './pages/DatasetExplorer';
+import AILab from './pages/AILab';
+import Solutions from './pages/Solutions';
 
 export default function App() {
   return (
-    <div>
-      <Hero />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-8">
-        <Card Icon={Database} title="Dataset Explorer" description="Interact with data." />
-        <Card Icon={Brain} title="AI Lab" description="Simulate economic models." />
-        <Card Icon={BarChart2} title="Solutions" description="Dashboards & APIs." />
-      </div>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dataset" element={<DatasetExplorer />} />
+        <Route path="/lab" element={<AILab />} />
+        <Route path="/solutions" element={<Solutions />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
