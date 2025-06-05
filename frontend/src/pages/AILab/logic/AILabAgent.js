@@ -1,3 +1,5 @@
+import { supabase } from "../../../supabaseClient";
+
 export class AILabAgent {
   constructor(prompt) {
     this.prompt = prompt;

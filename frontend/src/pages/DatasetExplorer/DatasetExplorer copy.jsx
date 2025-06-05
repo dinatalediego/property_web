@@ -2,6 +2,7 @@ import { Database } from "lucide-react";
 import { DatasetExplorerAgent } from "./logic/DatasetExplorerAgent";
 import { datasetConfig } from "./config";
 import DatasetCard from "./components/DatasetCard";
+import Navbar from "../../components/Navbar"; // Ajusta si está fuera
 
 export default function DatasetExplorer() {
   const agent = new DatasetExplorerAgent(datasetConfig.defaultDataset);
