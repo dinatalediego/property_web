@@ -9,7 +9,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/dataset" element={<DatasetExplorer />} />
+        <Route path="/datasets" element={<DatasetExplorer />} />
         <Route path="/lab" element={<AILab />} />
         <Route path="/solutions" element={<Solutions />} />
       </Routes>

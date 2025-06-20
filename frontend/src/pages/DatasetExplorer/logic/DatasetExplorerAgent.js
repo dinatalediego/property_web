@@ -1,13 +1,11 @@
 export class DatasetExplorerAgent {
-  constructor(config) {
-    this.config = config;
+  constructor(dataset) {
+    this.dataset = dataset
   }
-
   getDescription() {
-    return "Interactively explore economic datasets with filters and insights.";
+    return this.dataset.description
   }
-
   startExploration() {
-    console.log("Starting dataset exploration with config:", this.config);
+    window.open(this.dataset.download_url, '_blank')
   }
 }

@@ -30,7 +30,7 @@ export default function Home() {
             icon={<Database size={40} />}
             title="Dataset Explorer"
             description="Interact with data."
-            onClick={() => navigate("/dataset")}
+            onClick={() => navigate("/datasets")}
           />
           <HomeCard
             icon={<Brain size={40} />}
