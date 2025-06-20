@@ -1,3 +1,7 @@
-# DatasetExplorer Page
+# Página DatasetExplorer
 
-This directory houses the React components and logic for the **DatasetExplorer** page.
+Esta sección forma parte de econoagents.com y agrupa visualmente los elementos, datos o agentes vinculados a la sección **DatasetExplorer**.
+
+- UI en `/components/`
+- Lógica e interacción en `/logic/`
+- Configuración inicial en `config.js`
