@@ -1,12 +1,14 @@
-export default function DatasetCard({ icon, title, description, onAction }) {
+export default function DatasetCard({ dataset }) {
   return (
-    <div className="bg-white/10 border border-white/20 rounded-xl shadow-lg p-10 max-w-md text-center backdrop-blur-md">
-      <div className="mb-4">{icon}</div>
-      <h1 className="text-3xl font-bold mb-2">{title}</h1>
-      <p className="mb-6 opacity-80">{description}</p>
-      <button onClick={onAction} className="px-6 py-2 bg-cyan-500 hover:bg-cyan-600 rounded-md text-black font-semibold transition">
-        Start Exploring
-      </button>
+    <div className="bg-white/10 border border-white/20 rounded-xl shadow-lg p-4 text-white backdrop-blur-md flex flex-col gap-2">
+      <h3 className="text-lg font-semibold">{dataset.source}</h3>
+      <p className="text-sm opacity-80">
+        {dataset.rows} rows x {dataset.columns} columns
+      </p>
+      <p className="text-sm opacity-60">{new Date(dataset.date).toLocaleDateString()}</p>
+      {dataset.plot_url ? (
+        <iframe src={dataset.plot_url} className="w-full h-64 mt-2 rounded" />
+      ) : null}
     </div>
   );
 }

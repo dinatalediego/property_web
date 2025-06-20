@@ -1,3 +1,7 @@
-# AILab Page
+# Página AILab
 
-This directory houses the React components and logic for the **AILab** page.
+Esta sección forma parte de econoagents.com y agrupa visualmente los elementos, datos o agentes vinculados a la sección **AILab**.
+
+- UI en `/components/`
+- Lógica e interacción en `/logic/`
+- Configuración inicial en `config.js`
