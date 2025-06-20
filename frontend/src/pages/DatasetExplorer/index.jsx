@@ -6,7 +6,7 @@ import { CheckIcon, SelectorIcon } from "@heroicons/react/solid"
 import { DatabaseIcon } from "@heroicons/react/outline"
 import Navbar from "../../components/Navbar"
 import { DatasetExplorerAgent } from "./logic/DatasetExplorerAgent"
-import { supabase } from "../../../lib/supabaseClient"  // asegúrate de que esta ruta es la correcta
+import { supabase } from "../../supabaseClient";
 
 export default function DatasetExplorer() {
   // Estados
